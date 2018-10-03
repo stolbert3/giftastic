@@ -3,8 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>GifTastic</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
-        
+        <div id="buttons">
+        </div>
+
+        <div id="gifResultsBox"></div>
+
+        <div class="search">
+            <div class="form-group">
+                <label>Add a New Button</label>
+                <input type="text" class="form-control" id="userSearch" value="">
+            </div>
+            <button id="searchButton" class="btn btn-primary">Search Gifs!</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/giftastic.js"></script>
     </body>
 </html>
