@@ -27,27 +27,13 @@ $(document).ready(function() {
                 var gifList = response.data;
                 
                 for (i=0; i<10; i++) {
-                    // Creating a div for the gif
                     var movieGifs = $("<div>");
-
-              // Storing the result item's rating
                     var rating = gifList[i].rating;
-
-              // Creating a paragraph tag with the result item's rating
                     var p = $("<p>").text("Rating: " + rating);
-
-              // Creating an image tag
                     var personImage = $("<img>");
-
-              // Giving the image tag an src attribute of a proprty pulled off the
-              // result item
                     personImage.attr("src", gifList[i].images.fixed_height.url);
-
-              // Appending the paragraph and personImage we created to the "gifDiv" div we created
                     movieGifs.append(p);
                     movieGifs.append(personImage);
-
-              // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
                     $("#gifResultsBox").append(movieGifs);
                 }
             })
