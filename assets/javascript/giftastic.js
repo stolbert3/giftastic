@@ -34,7 +34,7 @@ $(document).ready(function() {
                     personImage.attr("src", gifList[i].images.fixed_height.url);
                     movieGifs.append(p);
                     movieGifs.append(personImage);
-                    $("#gifResultsBox").append(movieGifs);
+                    $("#gifResultsBox").prepend(movieGifs);
                 }
             })
     };
